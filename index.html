@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="logo">
+                        <img class="logo__link" src="images/logo.png" alt="logo">
+                    </a>
+                    <nav class="menu">
+                        <button class="menu__btn active"></button>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__list-link">Блогеры</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__list-link">Кейсы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__list-link">exit agency</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__list-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu__languages">
+                        <button class="menu__language active">en</button>
+                        <p class="menu__language-slash">/</p>
+                        <button class="menu__language active">ru</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Блогеры</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="bloggers">
+                <div class="container">
+                    <div class="bloggers__title">
+                        <h1 class="bloggers__title-text">Блогеры</h1>
+                    </div>
+                    <div class="bloggers__sort">
+                        <p class="bloggers__sort-by">Сортировать по:</p>
+                        <select class="bloggers__select-platform active" id="FilterPlatform" data-placeholder="выберете площадку">
+                            <option class="bloggers__select-option active" value="all" ></option>
+                            <option class="bloggers__select-option bloggers__select-option--example" disabled>Например: Youtube</option>
+                            <option class="bloggers__select-option active" value="all">Все</option>
+                            <option class="bloggers__select-option active" value=".youtube">Youtube</option>
+                            <option class="bloggers__select-option active" value=".vk">VK</option>
+                            <option class="bloggers__select-option active" value=".instagram">Instagram</option>
+                        </select>
+                        <select class="bloggers__select-direction active" id="FilterDirection"  data-placeholder="выберете направление">
+                            <option class="bloggers__select-option active" value="all"></option>
+                            <option class="bloggers__select-option bloggers__select-option--example" disabled>Например: Путешествия</option>
+                            <option class="bloggers__select-option active" value="all">Все</option>
+                            <option class="bloggers__select-option active" value=".diy">DIY</option>
+                            <option class="bloggers__select-option active" value=".auto">Авто</option>
+                            <option class="bloggers__select-option active" value=".show">Авторские шоу</option>
+                            <option class="bloggers__select-option active" value=".travel">Путешествия</option>
+                            <option class="bloggers__select-option active" value=".unboxing">Анбоксинг</option>
+                            <option class="bloggers__select-option active" value=".food">Еда</option>
+                            <option class="bloggers__select-option active" value=".animals">Животные</option>
+                            <option class="bloggers__select-option active" value=".game">Игры</option>
+                            <option class="bloggers__select-option active" value=".languages">Иностранные языки</option>
+                            <option class="bloggers__select-option active" value=".beauty">Красота</option>
+                            <option class="bloggers__select-option active" value=".cinema">Кино</option>
+                        </select>
+                    </div>
+                    <div id="Container" class="bloggers__container bloggers__items">
+                        <div class="mix vk diy auto bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info ">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix youtube auto bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix vk show travel bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix instagram food unboxing bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix vk show food bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix youtube beauty languages game bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix youtube languages travel bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix youtube game cinema bloggers__item active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix vk show food bloggers__item bloggers__item--loading _anim-items active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix youtube beauty languages game bloggers__item bloggers__item--loading _anim-items active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix youtube languages bloggers__item bloggers__item--loading _anim-items active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                        <div class="mix youtube game cinema bloggers__item bloggers__item--loading _anim-items active">
+                            <h3 class="bloggers__name">Макс Максимов</h3>
+                            <div class="bloggers__info">
+                                <p class="bloggers__info--subscribers">3 160 000+</p>
+                                <p class="bloggers__info--subscribers">134 000+</p>
+                                <p class="bloggers__info--subscribers">128 000+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="footer" >
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="#" class="footer-logo">
+                        <img class="footer-logo__link" src="images/logo-big.png" alt="logo">
+                    </a>
+                    <div class="footer__info">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"> <a class="footer__list-link" href="#" >Cвязаться с нами</a></li>
+                            <li class="footer__list-item"> <a class="footer__list-link" href="mailto:reklama@wildjam.ru" >reklama@wildjam.ru</a></li>
+                            <li class="footer__list-item"> <a class="footer__list-link" href="#" >ул. Сущевская, д. 27, стр. 2</a></li>
+                            <li class="footer__list-item"> <a class="footer__list-link" href="tel:+74993933962" >+7 (499) 393-39-62</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/vk.svg" alt="vk">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/inst.svg" alt="inst">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./scripts/jquery.mixitup.js"></script>
+    <script src="./scripts/jquery.formstyler.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
